@@ -2,7 +2,8 @@
   display: flex;
   background: black;
   align-items: center;
-  height: 14vh;
+  height: 16vh;
+  font-family: 'Gayathri', sans-serif;
 }
 .navContainer .navBar {
   display: flex;
@@ -15,56 +16,65 @@
   text-decoration: none;
   color: white;
   font-size: 1em;
+  font-family: 'Gayathri', sans-serif;
 }
 .navContainer .navBar .home {
   width: 30%;
   text-align: center;
-  padding: 4.6%;
+  padding: 5.3%;
 }
 .navContainer .navBar .home:hover {
-  background: red;
+  background: #bc0000;
   color: black;
 }
 .navContainer .navBar .aboutUs {
   width: 30%;
   text-align: center;
-  padding: 4.6%;
+  padding: 5.3%;
+  font-size: 1rem;
 }
 .navContainer .navBar .aboutUs:hover {
-  background: red;
+  background: #bc0000;
   color: black;
 }
 .navContainer .navBar .services {
   width: 30%;
   text-align: center;
-  padding: 4.6%;
+  padding: 5.3%;
 }
 .navContainer .navBar .services:hover {
-  background: red;
+  background: #bc0000;
   color: black;
 }
 .navContainer .navBar .sautiNews {
-  width: 30%;
+  width: 35%;
   text-align: center;
-  padding: 4.6%;
+  padding: 5.3%;
 }
 .navContainer .navBar .sautiNews:hover {
-  background: red;
+  background: #bc0000;
   color: black;
 }
 .navContainer .navBar .contact {
-  width: 30%;
+  width: 35%;
   text-align: center;
-  padding: 4.6%;
+  padding: 5.3%;
 }
 .navContainer .navBar .contact:hover {
-  background: red;
+  background: #bc0000;
   color: black;
 }
 .navContainer h1 {
   color: white;
   font-size: 2.6em;
   padding: 2%;
+  display: flex;
+  width: 100%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.navContainer h1 span {
+  color: #bc0000;
 }
 .navContainer .icons {
   width: 9%;
@@ -79,6 +89,7 @@
 }
 .header-img-text img {
   width: 100%;
+  border: solid 2px black;
 }
 .header-img-text .textonpic {
   background: rgba(27, 20, 17, 0.8);
@@ -90,6 +101,7 @@
   top: 73%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Gayathri', sans-serif;
 }
 .header-img-text .textonpic .btnContainer {
   width: 97%;
@@ -98,10 +110,13 @@
   display: flex;
 }
 .header-img-text .textonpic .btnContainer button {
-  background: #ffb300;
+  background: #ffb20f;
   width: 45%;
   padding: 1.8%;
+  border: solid 1px #ffb20f;
+  border-radius: 5px;
   text-align: center;
+  font-family: 'Gayathri', sans-serif;
   color: black;
   margin-top: 5%;
 }
@@ -111,6 +126,90 @@
 }
 .header-img-text .textonpic p {
   font-size: 1em;
+}
+@media (max-width: 1000px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+  }
+  .navContainer .navBar {
+    width: 100%;
+    margin-right: 20%;
+    padding: 0%;
+    margin: 0%;
+  }
+  .navContainer .navBar a {
+    padding: 0%;
+    width: 100%;
+  }
+  .navContainer .home {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #bc0000;
+  }
+  .navContainer .home:hover {
+    background: #bc0000;
+    color: black;
+    text-decoration: underline;
+  }
+  .navContainer .aboutUs {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #bc0000;
+  }
+  .navContainer .aboutUs:hover {
+    background: #bc0000;
+    color: black;
+    text-decoration: underline;
+  }
+  .navContainer .services {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #bc0000;
+  }
+  .navContainer .services:hover {
+    background: #bc0000;
+    color: black;
+    text-decoration: underline;
+  }
+  .navContainer .sautiNews {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #bc0000;
+  }
+  .navContainer .sautiNews:hover {
+    background: #bc0000;
+    color: black;
+    text-decoration: underline;
+  }
+  .navContainer .contact {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #bc0000;
+  }
+  .navContainer .contact:hover {
+    background: #bc0000;
+    color: black;
+    text-decoration: underline;
+  }
+  .navContainer .h1Container {
+    border: none;
+    margin-right: 11.5%;
+  }
+  .navContainer .h1Container h1 {
+    padding: 15%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+  .navContainer .icons {
+    display: none;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -239,4 +338,46 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+body {
+  background: #ff4b3e;
+}
+body .introContainer {
+  background: #ff4b3e;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  font-size: 1.7em;
+  font-family: 'Gayathri', sans-serif;
+}
+body .videoContainer {
+  padding: 5%;
+  background: #ff4b3e;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+body .videoContainer .One {
+  display: flex;
+  flex-direction: column;
+}
+body .videoContainer .One h3 {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+body .videoContainer .Two {
+  display: flex;
+  flex-direction: column;
+}
+body .videoContainer .Two h3 {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+hr {
+  margin: 0% 10%;
+  color: white;
 }
