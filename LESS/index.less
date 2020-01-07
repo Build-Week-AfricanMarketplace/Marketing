@@ -1,8 +1,8 @@
 .navContainer{
-    border: solid 2px red;
     display: flex;
     background: black;
     align-items: center;
+    height: 14vh;
 
     .navBar{
        
@@ -15,12 +15,69 @@
         a{
             text-decoration: none;
             color: white;
-            font-size: 1.2em;
+            font-size: 1em;
+        }//closes a
+
+        .home{
+            width: 30%;
+            text-align: center;
+            padding: 4.6%;
+
+            &:hover{
+                background: red;
+                color: black;
+            }
+        }
+
+        .aboutUs{
+            width: 30%;
+            text-align: center;
+            padding: 4.6%;
+
+            &:hover{
+                background: red;
+                color: black;
+            }
+        }
+
+        .services{
+            width: 30%;
+            text-align: center;
+            padding: 4.6%;
+
+            &:hover{
+                background: red;
+                color: black;
+            }
+        }
+
+        .sautiNews{
+            width: 30%;
+            text-align: center;
+            padding: 4.6%;
+
+            &:hover{
+                background: red;
+                color: black;
+            }
+        }
+
+        .contact{
+            width: 30%;
+            text-align: center;
+            padding: 4.6%;
+
+            &:hover{
+                background: red;
+                color: black;
+            }
         }
     }//closes navBar
 
     h1{
         color: white;
+        font-size: 2.6em;
+        padding: 2%;
     }//closes h1
     
     .icons{
@@ -33,11 +90,40 @@
 
 }//closes navContainer
 
-.header-img{
-    width: 100%;
+.header-img-text{
+    position: relative;
+    text-align: center;
+    color: white;
 
     img{
         width: 99.9%;
-        height: 100vh;
-    }
-}
+    }//closes img
+
+    .textonpic{
+        border: solid 2px green;
+        background: rgba(27, 20, 17, 0.8);
+        padding: 1%;
+        color: white;
+        width: 40%;
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+     
+
+        .btnContainer{
+            width: 97%;
+            padding: 2%;
+            justify-content: space-around;
+            display: flex;
+
+            button{
+                background: #ffb300;
+                width: 45%;
+                padding: 1.5%;
+                text-align: center;
+                color: black;
+               }//closes button
+            }//close btnContainer
+    }//closes textonpic
+}//closes header-img-text

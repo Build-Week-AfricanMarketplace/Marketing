@@ -1,8 +1,8 @@
 .navContainer {
-  border: solid 2px red;
   display: flex;
   background: black;
   align-items: center;
+  height: 14vh;
 }
 .navContainer .navBar {
   display: flex;
@@ -14,10 +14,57 @@
 .navContainer .navBar a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+.navContainer .navBar .home {
+  width: 30%;
+  text-align: center;
+  padding: 4.6%;
+}
+.navContainer .navBar .home:hover {
+  background: red;
+  color: black;
+}
+.navContainer .navBar .aboutUs {
+  width: 30%;
+  text-align: center;
+  padding: 4.6%;
+}
+.navContainer .navBar .aboutUs:hover {
+  background: red;
+  color: black;
+}
+.navContainer .navBar .services {
+  width: 30%;
+  text-align: center;
+  padding: 4.6%;
+}
+.navContainer .navBar .services:hover {
+  background: red;
+  color: black;
+}
+.navContainer .navBar .sautiNews {
+  width: 30%;
+  text-align: center;
+  padding: 4.6%;
+}
+.navContainer .navBar .sautiNews:hover {
+  background: red;
+  color: black;
+}
+.navContainer .navBar .contact {
+  width: 30%;
+  text-align: center;
+  padding: 4.6%;
+}
+.navContainer .navBar .contact:hover {
+  background: red;
+  color: black;
 }
 .navContainer h1 {
   color: white;
+  font-size: 2.6em;
+  padding: 2%;
 }
 .navContainer .icons {
   width: 9%;
@@ -25,10 +72,35 @@
 .navContainer .icons i {
   padding: 1%;
 }
-.header-img {
-  width: 100%;
+.header-img-text {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-.header-img img {
+.header-img-text img {
   width: 99.9%;
-  height: 100vh;
+}
+.header-img-text .textonpic {
+  border: solid 2px green;
+  background: rgba(27, 20, 17, 0.8);
+  padding: 1%;
+  color: white;
+  width: 40%;
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-img-text .textonpic .btnContainer {
+  width: 97%;
+  padding: 2%;
+  justify-content: space-around;
+  display: flex;
+}
+.header-img-text .textonpic .btnContainer button {
+  background: #ffb300;
+  width: 45%;
+  padding: 1.5%;
+  text-align: center;
+  color: black;
 }
