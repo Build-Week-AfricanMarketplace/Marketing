@@ -455,3 +455,27 @@ footer {
 footer .footericons {
   padding: 0%;
 }
+.introContainer .introPar {
+  border: solid 2px green;
+}
+.introContainer .aboutContainer {
+  border: solid 2px blue;
+}
+.introContainer .aboutContainer .projectLeadBox {
+  border: solid 2px yellow;
+  display: flex;
+}
+.introContainer .aboutContainer .projectLeadBox h3 {
+  border: solid 2px red;
+  width: 100%;
+  padding: 4%;
+}
+.introContainer .aboutContainer .uxDesignBox {
+  border: solid 2px yellow;
+  display: flex;
+}
+.introContainer .aboutContainer .uxDesignBox h3 {
+  border: solid 2px red;
+  width: 100%;
+  padding: 4%;
+}
