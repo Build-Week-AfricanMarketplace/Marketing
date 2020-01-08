@@ -340,10 +340,10 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #ff4b3e;
+  background: #bc0000;
 }
 body .introContainer {
-  background: #ff4b3e;
+  background: #bc0000;
   color: white;
   text-align: center;
   padding: 5%;
@@ -352,7 +352,7 @@ body .introContainer {
 }
 body .videoContainer {
   padding: 5%;
-  background: #ff4b3e;
+  background: #bc0000;
   display: flex;
   justify-content: space-around;
   color: white;
@@ -360,6 +360,9 @@ body .videoContainer {
 body .videoContainer .One {
   display: flex;
   flex-direction: column;
+  border: solid 2px #ffb20f;
+  border-radius: 5px;
+  background: radial-gradient(#bc0000, #ffb20f);
 }
 body .videoContainer .One h3 {
   padding: 5%;
@@ -370,6 +373,9 @@ body .videoContainer .One h3 {
 body .videoContainer .Two {
   display: flex;
   flex-direction: column;
+  border: solid 2px #ffb20f;
+  border-radius: 5px;
+  background: radial-gradient(#bc0000, #ffb20f);
 }
 body .videoContainer .Two h3 {
   padding: 5%;
@@ -380,4 +386,21 @@ body .videoContainer .Two h3 {
 hr {
   margin: 0% 10%;
   color: white;
+}
+.newsLetter {
+  border: solid 2px green;
+  display: flex;
+  flex-direction: column;
+}
+.newsLetter h3 {
+  padding: 2%;
+  text-align: center;
+}
+.newsLetter .form {
+  border: solid 2px yellow;
+  padding: 2%;
+}
+.newsLetter .form .emailSignUpBox {
+  display: flex;
+  justify-content: center;
 }
