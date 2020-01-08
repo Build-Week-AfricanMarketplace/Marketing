@@ -455,27 +455,128 @@ footer {
 footer .footericons {
   padding: 0%;
 }
-.introContainer .introPar {
-  border: solid 2px green;
+.aboutintroContainer {
+  background: #bc0000;
+  color: white;
+  text-align: center;
+  padding: 8%;
+  font-family: 'Gayathri', sans-serif;
 }
-.introContainer .aboutContainer {
-  border: solid 2px blue;
+.aboutintroContainer .introPar {
+  border: solid 2px #121212;
+  border-radius: 5px;
+  background: #121212;
+  padding: 5%;
+  font-size: 1.7em;
 }
-.introContainer .aboutContainer .projectLeadBox {
-  border: solid 2px yellow;
-  display: flex;
-}
-.introContainer .aboutContainer .projectLeadBox h3 {
-  border: solid 2px red;
-  width: 100%;
+.aboutintroContainer .aboutContainer {
   padding: 4%;
 }
-.introContainer .aboutContainer .uxDesignBox {
-  border: solid 2px yellow;
+.aboutintroContainer .aboutContainer .projectLeadBox {
   display: flex;
 }
-.introContainer .aboutContainer .uxDesignBox h3 {
-  border: solid 2px red;
+.aboutintroContainer .aboutContainer .projectLeadBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox h3 {
   width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .projectLeadBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .uxDesignBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .uiDeveloperBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .reactBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .reactBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .reactBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 16.5px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .reactBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .reactIIBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .reactIIBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .reactIIBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 16.5px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .reactIIBox p {
+  padding: 4%;
+}
+.aboutintroContainer .aboutContainer .backendBox {
+  display: flex;
+}
+.aboutintroContainer .aboutContainer .backendBox img {
+  border-radius: 100%;
+}
+.aboutintroContainer .aboutContainer .backendBox h3 {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.aboutintroContainer .aboutContainer .backendBox p {
   padding: 4%;
 }
