@@ -2,7 +2,7 @@
   display: flex;
   background: black;
   align-items: center;
-  height: 16vh;
+  height: 14vh;
   font-family: 'Gayathri', sans-serif;
 }
 .navContainer .navBar {
@@ -17,6 +17,7 @@
   color: white;
   font-size: 1em;
   font-family: 'Gayathri', sans-serif;
+  font-size: 20px;
 }
 .navContainer .navBar .home {
   width: 30%;
@@ -119,6 +120,11 @@
   font-family: 'Gayathri', sans-serif;
   color: black;
   margin-top: 5%;
+}
+.header-img-text .textonpic .btnContainer button a {
+  text-decoration: none;
+  color: #bc0000;
+  font-size: 1.2rem;
 }
 .header-img-text .textonpic h2 {
   font-size: 2em;
@@ -355,7 +361,8 @@ body .videoContainer {
   background: #bc0000;
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: #bc0000;
+  font-size: 20px;
 }
 body .videoContainer .One {
   display: flex;
@@ -388,19 +395,63 @@ hr {
   color: white;
 }
 .newsLetter {
-  border: solid 2px green;
   display: flex;
   flex-direction: column;
+  background: #121212;
+  width: 100%;
+  margin-left: 0%;
 }
 .newsLetter h3 {
   padding: 2%;
   text-align: center;
+  color: white;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 2.3em;
 }
 .newsLetter .form {
-  border: solid 2px yellow;
-  padding: 2%;
+  margin-bottom: 3%;
 }
 .newsLetter .form .emailSignUpBox {
   display: flex;
   justify-content: center;
+}
+.newsLetter .form .emailSignUpBox .emailBox {
+  width: 35%;
+  margin-right: 5%;
+}
+.newsLetter .form .emailSignUpBox .emailBox input[type=email] {
+  width: 100%;
+  padding: 5%;
+  border: solid 1px white;
+  border-radius: 5px;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+}
+.newsLetter .form .emailSignUpBox .sumbitBox {
+  width: 20%;
+}
+.newsLetter .form .emailSignUpBox .sumbitBox input[type=submit] {
+  width: 100%;
+  padding: 8%;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  background: #121212;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+footer {
+  padding: 2%;
+  background: black;
+  color: white;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footericons {
+  padding: 0%;
 }
