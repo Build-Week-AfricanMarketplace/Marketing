@@ -193,6 +193,14 @@ table {
   background: #bc0000;
   color: black;
 }
+.navContainer .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navContainer .sticky .introContainer {
+  padding-top: 60px;
+}
 .navContainer h1 {
   color: white;
   font-size: 2.6em;
