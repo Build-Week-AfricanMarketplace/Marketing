@@ -4,16 +4,16 @@
     align-items: center;
     height     : 14vh;
     font-family: 'Gayathri', sans-serif;
+    width: 100%;
 
     
 
     .navBar {
 
         display        : flex;
-        width          : 60%;
+        width          : 100%;
         justify-content: space-between;
         align-items    : center;
-        margin         : 0% 1% 0% 20%;
 
         a {
             text-decoration: none;
@@ -27,9 +27,10 @@
         //closes a
 
         .home {
-            width     : 30%;
+            width     : 5%;
             text-align: center;
             padding   : 5.3%;
+            margin-left: 5%;
 
             &:hover {
                 background: #bc0000;
@@ -232,7 +233,7 @@
 
 
 
-@media(max-width: 1000px) {
+@media(max-width: 1245px) {
     .navContainer {
         display        : flex;
         flex-direction : column;
@@ -376,9 +377,117 @@
 ////////////////////////////////////
 ///////////////////////////////////
 
-@media only screen and (max-width: 800px) {
-   
 
+
+@media only screen and (max-width: 715px) and(max-width: 770px){
+    .navContainer{
+        width: 100%;
+        height: 15vh;
+
+        .h1Container{
+          padding: 0%;
+            width: 20%;
+            margin-left: 5%;
+            
+            h1{
+                padding: 0%;
+            }
+            
+
+
+
+        }
+
+        .navBar{
+            display: flex;
+            width: 95%;
+            margin-right: 2%;
+            display: flex;
+            flex-direction:row ;
+            padding: 2%;
+            height:5vh;
+
+            .home{
+                width:10%;
+                padding:0%;
+
+                &:hover{
+                    background: none;
+                }
+
+            }
+
+            .aboutUs{
+                padding: 0%;
+                width:20%;
+
+                &:hover{
+                    background: none;
+                }
+
+            }
+
+            .services{
+                padding: 0%;
+                width:15%;
+
+                &:hover{
+                    background: none;
+                }
+
+            }
+
+            .sautiNews{
+                padding: 0%;
+                width: 15%;
+
+                &:hover{
+                    background: none;
+                }
+            }
+
+            .contact{
+                padding: 0%;
+                width: 15%;
+
+                &:hover{
+                    background: none;
+                }
+            }
+         
+        }
+
+        
+    }
+    .header-img-text{
+
+        img{
+            width: 100%;
+        }
+        
+
+        .textonpic{
+
+            h2{
+                font-size: 1em;
+                display: none;
+
+            }
+            .btnContainer{
+
+                button{
+                    height: 3vh;
+
+                    a{
+                        font-size: 15px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
 
 
 

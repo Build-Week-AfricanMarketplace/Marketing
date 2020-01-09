@@ -132,13 +132,13 @@ table {
   align-items: center;
   height: 14vh;
   font-family: 'Gayathri', sans-serif;
+  width: 100%;
 }
 .navContainer .navBar {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0% 1% 0% 20%;
 }
 .navContainer .navBar a {
   text-decoration: none;
@@ -148,9 +148,10 @@ table {
   font-size: 20px;
 }
 .navContainer .navBar .home {
-  width: 30%;
+  width: 5%;
   text-align: center;
   padding: 5.3%;
+  margin-left: 5%;
 }
 .navContainer .navBar .home:hover {
   background: #bc0000;
@@ -269,7 +270,7 @@ table {
 .header-img-text .textonpic p {
   font-size: 1em;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1245px) {
   .navContainer {
     display: flex;
     flex-direction: column;
@@ -353,8 +354,79 @@ table {
     display: none;
   }
 }
+@media only screen and (max-width: 715px) and (max-width: 770px) {
+  .navContainer {
+    width: 100%;
+    height: 15vh;
+  }
+  .navContainer .h1Container {
+    padding: 0%;
+    width: 20%;
+    margin-left: 5%;
+  }
+  .navContainer .h1Container h1 {
+    padding: 0%;
+  }
+  .navContainer .navBar {
+    width: 95%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row ;
+    padding: 2%;
+    height: 5vh;
+  }
+  .navContainer .navBar .home {
+    width: 10%;
+    padding: 0%;
+  }
+  .navContainer .navBar .home:hover {
+    background: none;
+  }
+  .navContainer .navBar .aboutUs {
+    padding: 0%;
+    width: 20%;
+  }
+  .navContainer .navBar .aboutUs:hover {
+    background: none;
+  }
+  .navContainer .navBar .services {
+    padding: 0%;
+    width: 15%;
+  }
+  .navContainer .navBar .services:hover {
+    background: none;
+  }
+  .navContainer .navBar .sautiNews {
+    padding: 0%;
+    width: 15%;
+  }
+  .navContainer .navBar .sautiNews:hover {
+    background: none;
+  }
+  .navContainer .navBar .contact {
+    padding: 0%;
+    width: 15%;
+  }
+  .navContainer .navBar .contact:hover {
+    background: none;
+  }
+  .header-img-text img {
+    width: 100%;
+  }
+  .header-img-text .textonpic h2 {
+    font-size: 1em;
+    display: none;
+  }
+  .header-img-text .textonpic .btnContainer button {
+    height: 3vh;
+  }
+  .header-img-text .textonpic .btnContainer button a {
+    font-size: 15px;
+  }
+}
 body {
   background: #bc0000;
+  overflow-x: hidden;
 }
 body .introContainer {
   background: #bc0000;
@@ -364,7 +436,7 @@ body .introContainer {
   font-size: 1.7em;
   font-family: 'Gayathri', sans-serif;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1245px) {
   body .introContainer .introContainer {
     border: solid 2px blue;
   }
@@ -407,7 +479,7 @@ hr {
   margin: 0% 10%;
   color: white;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1245px) {
   html {
     width: 100%;
     overflow-x: hidden;
