@@ -259,7 +259,7 @@ table {
 }
 .header-img-text .textonpic .btnContainer button a {
   text-decoration: none;
-  color: #bc0000;
+  color: black;
   font-size: 1.2rem;
 }
 .header-img-text .textonpic h2 {
@@ -364,20 +364,25 @@ body .introContainer {
   font-size: 1.7em;
   font-family: 'Gayathri', sans-serif;
 }
+@media (max-width: 1000px) {
+  body .introContainer .introContainer {
+    border: solid 2px blue;
+  }
+}
 body .videoContainer {
   padding: 5%;
   background: #bc0000;
   display: flex;
   justify-content: space-around;
-  color: #bc0000;
+  color: white;
   font-size: 20px;
 }
 body .videoContainer .One {
   display: flex;
   flex-direction: column;
-  border: solid 2px #ffb20f;
-  border-radius: 5px;
-  background: radial-gradient(#bc0000, #ffb20f);
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
 }
 body .videoContainer .One h3 {
   padding: 5%;
@@ -388,9 +393,9 @@ body .videoContainer .One h3 {
 body .videoContainer .Two {
   display: flex;
   flex-direction: column;
-  border: solid 2px #ffb20f;
-  border-radius: 5px;
-  background: radial-gradient(#bc0000, #ffb20f);
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
 }
 body .videoContainer .Two h3 {
   padding: 5%;
@@ -402,10 +407,42 @@ hr {
   margin: 0% 10%;
   color: white;
 }
+@media only screen and (min-width: 1000px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  html body {
+    background: #bc0000;
+    margin: 0, auto;
+  }
+  html body .videoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .videoContainer .One {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  html body .videoContainer .One h3 {
+    width: 100%;
+  }
+  html body .videoContainer .One iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  html body .videoContainer .Two {
+    width: 100%;
+  }
+  html body .videoContainer .Two iframe {
+    width: 100%;
+    height: 50vh;
+  }
+}
 .newsLetter {
   display: flex;
   flex-direction: column;
-  background: #121212;
+  background: radial-gradient(#333333, black);
   width: 100%;
   margin-left: 0%;
 }
@@ -449,6 +486,11 @@ hr {
   font-size: 1em;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .newsLetter {
+    width: 104.5%;
+  }
+}
 footer {
   padding: 2%;
   background: black;
@@ -473,7 +515,7 @@ footer .footericons {
 .aboutintroContainer .introPar {
   border: solid 2px #121212;
   border-radius: 5px;
-  background: #121212;
+  background: radial-gradient(#333333, black);
   padding: 5%;
   font-size: 1.7em;
 }
@@ -491,7 +533,7 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  background: #121212;
+  background: radial-gradient(#333333, black);
   border-radius: 10px;
   box-sizing: border-box;
 }
@@ -509,8 +551,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  background: #121212;
   border-radius: 10px;
+  background: radial-gradient(#333333, black);
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .uxDesignBox p {
@@ -527,8 +569,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  background: #121212;
   border-radius: 10px;
+  background: radial-gradient(#333333, black);
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .uiDeveloperBox p {
@@ -545,7 +587,7 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 16.5px;
-  background: #121212;
+  background: radial-gradient(#333333, black);
   border-radius: 10px;
   box-sizing: border-box;
 }
@@ -563,8 +605,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 16.5px;
-  background: #121212;
   border-radius: 10px;
+  background: radial-gradient(#333333, black);
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .reactIIBox p {
@@ -581,8 +623,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  background: #121212;
   border-radius: 10px;
+  background: radial-gradient(#333333, black);
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .backendBox p {

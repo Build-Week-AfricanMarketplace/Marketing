@@ -1,9 +1,11 @@
 .newsLetter {
     display       : flex;
     flex-direction: column;
-    background    : #121212;
+    background   : radial-gradient(#333333, black);
     width         : 100%;
     margin-left   : 0%;
+
+    
 
     h3 {
         padding    : 2%;
@@ -67,3 +69,9 @@
 }
 
 //newsLetter
+
+@media(max-width:1000px){
+    .newsLetter{
+        width: 104.5%;
+    }
+}

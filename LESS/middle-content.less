@@ -1,6 +1,8 @@
 body {
     background: #bc0000;
 
+   
+
     .introContainer {
         background : #bc0000;
         color      : white;
@@ -10,68 +12,124 @@ body {
         font-family: 'Gayathri', sans-serif;
 
 
-    }
-
-    //closes introContainer
-
-
-    .videoContainer {
-        padding        : 5%;
-        background     : #bc0000;
-        display        : flex;
-        justify-content: space-around;
-        color          : #bc0000;
-        font-size      : 20px;
-
-        .One {
-            display       : flex;
-            flex-direction: column;
-            border        : solid 2px #ffb20f;
-            border-radius : 5px;
-            background    : radial-gradient(#bc0000, #ffb20f);
-
-            h3 {
-                padding    : 5%;
-                text-align : center;
-                font-size  : 1.2em;
-                font-family: 'Gayathri', sans-serif;
+        @media(max-width: 1000px) {
+            .introContainer {
+                border: solid 2px blue;
 
             }
 
-            //closes h3
+            //closes introContainer
+
+
         }
-
-        //closes one
-
-        .Two {
-            display       : flex;
-            flex-direction: column;
-            border        : solid 2px #ffb20f;
-            border-radius : 5px;
-            background    : radial-gradient(#bc0000, #ffb20f);
-
-
-            h3 {
-                padding    : 5%;
-                text-align : center;
-                font-size  : 1.2em;
-                font-family: 'Gayathri', sans-serif;
-            }
-
-            //closes h3
-        }
-
-        // closes two
     }
 
-    //closes videoCotainer
+        //closes introContainer
+
+
+        .videoContainer {
+            padding        : 5%;
+            background     : #bc0000;
+            display        : flex;
+            justify-content: space-around;
+            color          : white;
+            font-size      : 20px;
+
+            .One {
+                display       : flex;
+                flex-direction: column;
+                border        : solid 1px black;
+                border-radius : 10px;
+                background    : radial-gradient(#333333, black);
+
+                h3 {
+                    padding    : 5%;
+                    text-align : center;
+                    font-size  : 1.2em;
+                    font-family: 'Gayathri', sans-serif;
+
+                }
+
+                //closes h3
+            }
+
+            //closes one
+
+            .Two {
+                display       : flex;
+                flex-direction: column;
+                border        : solid 1px black;
+                border-radius : 10px;
+                background    : radial-gradient(#333333, black);
+
+
+                h3 {
+                    padding    : 5%;
+                    text-align : center;
+                    font-size  : 1.2em;
+                    font-family: 'Gayathri', sans-serif;
+                }
+
+                //closes h3
+            }
+
+            // closes two
+        }
+
+        //closes videoCotainer
+    }
+
+    //closes body
+
+    hr {
+        margin: 0% 10%;
+        color : white;
+    }
+///////////
+
+@media only screen and (min-width: 1000px){
+    html{
+        width: 100%;
+        overflow-x: hidden;
+        
+
+    
+
+    body{
+        background: #bc0000;
+        margin: 0, auto;
+      
+    
+    .videoContainer{
+        display: flex;
+        flex-direction: column;
+
+
+        .One{
+            width: 100%;
+            margin-bottom: 3%;
+
+            h3{
+                width: 100%;
+
+            }
+
+            iframe{
+                width: 100%;
+                height: 50vh;
+            }//closes iframe
+        }//closes One
+
+        .Two{
+            width: 100%;
+
+            iframe{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+    }//closes videoContainer
 }
-
-//closes body
-
-hr {
-    margin: 0% 10%;
-    color : white;
 }
-
-//closes hr
+}//closes media1000px
