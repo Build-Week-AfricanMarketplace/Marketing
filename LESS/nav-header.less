@@ -1,10 +1,5 @@
 .navContainer {
-    display    : flex;
-    background : black;
-    align-items: center;
-    height     : 14vh;
-    font-family: 'Gayathri', sans-serif;
-    width: 100%;
+    .headContStyling();
 
     
 
@@ -19,7 +14,7 @@
             text-decoration: none;
             color          : white;
             font-size      : 1em;
-            font-family    : 'Gayathri', sans-serif;
+            font-family    : @FontGaya;
             font-size      : 20px;
 
         }
@@ -27,13 +22,10 @@
         //closes a
 
         .home {
-            width     : 5%;
-            text-align: center;
-            padding   : 5.3%;
-            margin-left: 5%;
+            .homeLinkStyling();
 
             &:hover {
-                background: #bc0000;
+                background: @hoverRed;
                 color     : black;
             }
 
@@ -43,14 +35,11 @@
         //closes home link
 
         .aboutUs {
-            width     : 30%;
-            text-align: center;
-            padding   : 5.3%;
-            font-size : 1rem;
+            .otherLinkStyling();
 
 
             &:hover {
-                background: #bc0000;
+                background: @hoverRed;
                 color     : black;
             }
 
@@ -60,13 +49,10 @@
         //closes aboutUs link
 
         .services {
-            width     : 30%;
-            text-align: center;
-            padding   : 5.3%;
-
+            .otherLinkStyling();
 
             &:hover {
-                background: #bc0000;
+                background: @hoverRed;
                 color     : black;
             }
 
@@ -76,13 +62,11 @@
         //closes services link
 
         .sautiNews {
-            width     : 35%;
-            text-align: center;
-            padding   : 5.3%;
+            .otherLinkStyling();
 
 
             &:hover {
-                background: #bc0000;
+                background: @hoverRed;
                 color     : black;
             }
 
@@ -92,13 +76,11 @@
         //closes sautiNews
 
         .contact {
-            width     : 35%;
-            text-align: center;
-            padding   : 5.3%;
+            .otherLinkStyling();
 
 
             &:hover {
-                background: #bc0000;
+                background: @hoverRed;
                 color     : black;
             }
 
@@ -131,7 +113,7 @@
         margin-top : 10%;
 
         span {
-            color: #bc0000;
+            color: @hoverRed;
         }
 
         //closes span
@@ -181,7 +163,7 @@
         top          : 73%;
         left         : 50%;
         transform    : translate(-50%, -50%);
-        font-family  : 'Gayathri', sans-serif;
+        font-family  : @FontGaya;
 
         .btnContainer {
             width          : 97%;
@@ -190,15 +172,7 @@
             display        : flex;
 
             button {
-                background   : #ffb20f;
-                width        : 45%;
-                padding      : 1.8%;
-                border       : solid 1px #ffb20f;
-                border-radius: 5px;
-                text-align   : center;
-                font-family  : 'Gayathri', sans-serif;
-                color        : black;
-                margin-top   : 5%;
+                .buttonDesign();
 
                 a {
                     text-decoration: none;
@@ -233,7 +207,7 @@
 
 
 
-@media(max-width: 1245px) {
+@media @desktop{
     .navContainer {
         display        : flex;
         flex-direction : column;
@@ -263,11 +237,11 @@
         .home {
             text-align           : center;
             text-decoration      : underline;
-            text-decoration-color: #bc0000;
+            text-decoration-color: @hoverRed;
 
 
             &:hover {
-                background     : #bc0000;
+                background     : @hoverRed;
                 color          : black;
                 text-decoration: underline;
 
@@ -281,10 +255,10 @@
         .aboutUs {
             text-align           : center;
             text-decoration      : underline;
-            text-decoration-color: #bc0000;
+            text-decoration-color: @hoverRed;
 
             &:hover {
-                background     : #bc0000;
+                background     : @hoverRed;
                 color          : black;
                 text-decoration: underline;
 
@@ -298,10 +272,10 @@
         .services {
             text-align           : center;
             text-decoration      : underline;
-            text-decoration-color: #bc0000;
+            text-decoration-color: @hoverRed;
 
             &:hover {
-                background     : #bc0000;
+                background     : @hoverRed;
                 color          : black;
                 text-decoration: underline;
 
@@ -316,11 +290,11 @@
 
             text-align           : center;
             text-decoration      : underline;
-            text-decoration-color: #bc0000;
+            text-decoration-color: @hoverRed;
 
 
             &:hover {
-                background     : #bc0000;
+                background     : @hoverRed;
                 color          : black;
                 text-decoration: underline;
 
@@ -334,11 +308,11 @@
         .contact {
             text-align           : center;
             text-decoration      : underline;
-            text-decoration-color: #bc0000;
+            text-decoration-color: @hoverRed;
 
 
             &:hover {
-                background     : #bc0000;
+                background     : @hoverRed;
                 color          : black;
                 text-decoration: underline;
             }

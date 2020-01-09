@@ -126,6 +126,58 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.headContStyling {
+  display: flex;
+  background: black;
+  align-items: center;
+  height: 14vh;
+  font-family: 'Gayathri', sans-serif;
+  width: 100%;
+}
+.homeLinkStyling {
+  width: 5%;
+  text-align: center;
+  padding: 5.3%;
+  margin-left: 5%;
+}
+.otherLinkStyling {
+  width: 30%;
+  text-align: center;
+  padding: 5.3%;
+}
+.buttonDesign {
+  background: #ffb20f;
+  width: 45%;
+  padding: 1.8%;
+  border: solid 1px #ffb20f;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Gayathri', sans-serif;
+  color: black;
+  margin-top: 5%;
+}
+.videoStyling {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  border-radius: 10px;
+  background: radial-gradient(#333333, black);
+}
+.h3Styling {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Gayathri', sans-serif;
+}
+.aboutH3Styling {
+  width: 100%;
+  padding: 4%;
+  margin: 4%;
+  font-size: 20px;
+  background: radial-gradient(#333333, black);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
 .navContainer {
   display: flex;
   background: black;
@@ -161,7 +213,6 @@ table {
   width: 30%;
   text-align: center;
   padding: 5.3%;
-  font-size: 1rem;
 }
 .navContainer .navBar .aboutUs:hover {
   background: #bc0000;
@@ -177,7 +228,7 @@ table {
   color: black;
 }
 .navContainer .navBar .sautiNews {
-  width: 35%;
+  width: 30%;
   text-align: center;
   padding: 5.3%;
 }
@@ -186,7 +237,7 @@ table {
   color: black;
 }
 .navContainer .navBar .contact {
-  width: 35%;
+  width: 30%;
   text-align: center;
   padding: 5.3%;
 }
@@ -623,8 +674,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  border-radius: 10px;
   background: radial-gradient(#333333, black);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .uxDesignBox p {
@@ -641,8 +692,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  border-radius: 10px;
   background: radial-gradient(#333333, black);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .uiDeveloperBox p {
@@ -658,7 +709,7 @@ footer .footericons {
   width: 100%;
   padding: 4%;
   margin: 4%;
-  font-size: 16.5px;
+  font-size: 20px;
   background: radial-gradient(#333333, black);
   border-radius: 10px;
   box-sizing: border-box;
@@ -676,9 +727,9 @@ footer .footericons {
   width: 100%;
   padding: 4%;
   margin: 4%;
-  font-size: 16.5px;
-  border-radius: 10px;
+  font-size: 20px;
   background: radial-gradient(#333333, black);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .reactIIBox p {
@@ -695,8 +746,8 @@ footer .footericons {
   padding: 4%;
   margin: 4%;
   font-size: 20px;
-  border-radius: 10px;
   background: radial-gradient(#333333, black);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 .aboutintroContainer .aboutContainer .backendBox p {

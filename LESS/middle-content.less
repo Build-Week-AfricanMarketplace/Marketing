@@ -13,7 +13,7 @@ body {
         font-family: 'Gayathri', sans-serif;
 
 
-        @media(max-width: 1245px) {
+        @media @desktop{
             .introContainer {
                 border: solid 2px blue;
 
@@ -37,17 +37,10 @@ body {
             font-size      : 20px;
 
             .One {
-                display       : flex;
-                flex-direction: column;
-                border        : solid 1px black;
-                border-radius : 10px;
-                background    : radial-gradient(#333333, black);
+                .videoStyling();
 
                 h3 {
-                    padding    : 5%;
-                    text-align : center;
-                    font-size  : 1.2em;
-                    font-family: 'Gayathri', sans-serif;
+                    .h3Styling();
 
                 }
 
@@ -57,18 +50,11 @@ body {
             //closes one
 
             .Two {
-                display       : flex;
-                flex-direction: column;
-                border        : solid 1px black;
-                border-radius : 10px;
-                background    : radial-gradient(#333333, black);
+                .videoStyling();
 
 
                 h3 {
-                    padding    : 5%;
-                    text-align : center;
-                    font-size  : 1.2em;
-                    font-family: 'Gayathri', sans-serif;
+                    .h3Styling();
                 }
 
                 //closes h3
