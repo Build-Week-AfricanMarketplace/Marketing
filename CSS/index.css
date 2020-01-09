@@ -407,7 +407,7 @@ hr {
   margin: 0% 10%;
   color: white;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   html {
     width: 100%;
     overflow-x: hidden;
