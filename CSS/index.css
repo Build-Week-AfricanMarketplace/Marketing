@@ -128,7 +128,7 @@ table {
 }
 .headContStyling {
   display: flex;
-  background: black;
+  background: radial-gradient(#333333, black);
   align-items: center;
   height: 25vh;
   font-family: 'Gayathri', sans-serif;
@@ -175,7 +175,7 @@ table {
 @media (max-width: 2000px) {
   .navContainer {
     display: flex;
-    background: black;
+    background: radial-gradient(#333333, black);
     align-items: center;
     height: 25vh;
     font-family: 'Gayathri', sans-serif;
@@ -186,7 +186,7 @@ table {
 @media (max-width: 1024px) {
   .navContainer {
     display: flex;
-    background: black;
+    background: radial-gradient(#333333, black);
     align-items: center;
     height: 25vh;
     font-family: 'Gayathri', sans-serif;
