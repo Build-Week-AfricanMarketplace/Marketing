@@ -1,111 +1,125 @@
 .navContainer {
-    .headContStyling();
-    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
     
+   
 
-    
+    @media @LgDesktop {
+        .headContStyling();
+        justify-content: space-evenly;
+    }
+
+    @media @MeddeskTop{
+        .headContStyling();
+        justify-content: space-evenly;
+        height: 20vh;
+
+    }
+    @media @LgTablet{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        height: 15vh;
+        box-sizing: border-box;
+
+    }
+
+    @media @MedTablet{
+        display: flex;
+        flex-direction: column;
+        height: 15vh;
+
+    }
+   
+
+
 
     .navBar {
 
         display        : flex;
-        width          : 100%;
-        justify-content: space-between;
+        width          : 10%;
+        justify-content: center;
         align-items    : center;
+
+        @media @LgDesktop {
+            width: 60%;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+        }
+
+        @media @MeddeskTop{
+            width: 75%;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            padding: 2%;
+        }
+
+        @media @LgTablet{
+            
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            justify-content: space-around;
+            box-sizing: border-box;
+            padding: 2%;
+    
+        }
+
+        
+     @media @MedTablet{
+        width: 100%;
+
+    }
 
         a {
             color          : white;
             font-size      : 1em;
             font-family    : @FontGaya;
             font-size      : 20px;
-
-
-
-        }
-
-        //closes a
-
-        .home {
-            .homeLinkStyling();
-
-            &:hover {
-                background: @hoverRed;
-                color     : black;
-            }
-
-            //closes hover
-        }
-
-        //closes home link
-
-        .aboutUs {
-            .otherLinkStyling();
-
-
-            &:hover {
-                background: @hoverRed;
-                color     : black;
-            }
-
-            //closes hover
-        }
-
-        //closes aboutUs link
-
-        .services {
-            .otherLinkStyling();
-
-            &:hover {
-                background: @hoverRed;
-                color     : black;
-            }
-
-            //closes ver
-        }
-
-        //closes services link
-
-        .sautiNews {
-            .otherLinkStyling();
-
-
-            &:hover {
-                background: @hoverRed;
-                color     : black;
-            }
-
-            //closes hover
-        }
-
-        //closes sautiNews
-
-        .contact {
-            .otherLinkStyling();
-
-
-            &:hover {
-                background: @hoverRed;
-                color     : black;
-            }
-
-            //closes hover
-        }
-
-        //closes contact link
+       
     }
 
     
-
+    }
     //closes navBar
+
+    .h1Container{
+        width: 10%;
+        padding: 1%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1%;
+
+        
+    @media @MedTablet{
+        width: 100%;
+        padding: 5%;
+
+    }
+
+        @media @LgTablet{
+            width: 20%;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+    
 
     h1 {
         color      : white;
-        font-size  : 2.6em;
-        padding    : 2%;
+        font-size  : 3em;
         display    : flex;
         width      : 100%;
-        margin-left: 30%;
-        margin-top : 10%;
 
+
+        @media @LgTablet{
+         margin-right: 10%;
+    
+        }
 
         span {
             color: @hoverRed;
@@ -113,13 +127,19 @@
 
         //closes span
     }
+}
 
 
     //closes h1
 
     .icons {
-        width: 9%;
-
+        width: 9%; 
+        padding: 2%;
+        
+        
+        @media @MeddeskTop{
+            display: none;
+        }
         i {
             padding: 1%;
         }
@@ -140,10 +160,14 @@
     text-align: center;
     color     : white;
 
+   
+
 
     img {
         width : 100%;
         border: solid 2px black;
+
+       
 
     }
 
@@ -161,19 +185,45 @@
         transform    : translate(-50%, -50%);
         font-family  : @FontGaya;
 
+        @media @MedTablet{
+            width: 80%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           display: flex;
+        }
+
         .btnContainer {
             width          : 97%;
             padding        : 2%;
             justify-content: space-around;
             display        : flex;
 
+            @media @MedTablet{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;        
+            }
+
             button {
                 .buttonDesign();
+
+                @media @MedTablet{
+                    width: 100%;
+            
+                }
 
                 a {
                     text-decoration: none;
                     color          : black;
                     font-size      : 1.2rem;
+
+                    @media @MedTablet{
+                        font-size: 1em;
+                
+                    }
                 }
             }
 
@@ -185,12 +235,22 @@
         h2 {
             font-size: 2em;
             margin   : 2%;
+
+            @media @MedTablet{
+                font-size: 1.7em;
+        
+            }
         }
 
         //closes h2
 
         p {
             font-size: 1em;
+
+            @media @MedTablet{
+                display: none;
+        
+            }
         }
 
         //closes p
@@ -200,265 +260,3 @@
 }
 
 //closes header-img-text
-
-
-
-@media @desktop{
-    .navContainer {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        height         : 25vh;
-        align-items    : center;
-        width          : 100%;
-        padding        : 0%;
-
-
-        .navBar {
-            width       : 100%;
-            margin-right: 20%;
-            padding     : 0%;
-            margin      : 0%;
-            
-            
-
-            a {
-                padding: 0%;
-                width  : 100%;
-            }
-        }
-
-        //closes .navbar 1000px
-
-        .home {
-            text-align           : center;
-            text-decoration      : underline;
-            text-decoration-color: @hoverRed;
-
-
-            &:hover {
-                background     : @hoverRed;
-                color          : black;
-                text-decoration: underline;
-
-            }
-
-            //closes hover
-        }
-
-        //closes home link
-
-        .aboutUs {
-            text-align           : center;
-            text-decoration      : underline;
-            text-decoration-color: @hoverRed;
-
-            &:hover {
-                background     : @hoverRed;
-                color          : black;
-                text-decoration: underline;
-
-            }
-
-            //closes hover
-        }
-
-        //closes aboutUs link
-
-        .services {
-            text-align           : center;
-            text-decoration      : underline;
-            text-decoration-color: @hoverRed;
-
-            &:hover {
-                background     : @hoverRed;
-                color          : black;
-                text-decoration: underline;
-
-            }
-
-            //closes ver
-        }
-
-        //closes services link
-
-        .sautiNews {
-
-            text-align           : center;
-            text-decoration      : underline;
-            text-decoration-color: @hoverRed;
-
-
-            &:hover {
-                background     : @hoverRed;
-                color          : black;
-                text-decoration: underline;
-
-            }
-
-            //closes hover
-        }
-
-        //closes sautiNews
-
-        .contact {
-            text-align           : center;
-            text-decoration      : underline;
-            text-decoration-color: @hoverRed;
-
-
-            &:hover {
-                background     : @hoverRed;
-                color          : black;
-                text-decoration: underline;
-            }
-
-            //closes hover
-        }
-
-        //closes contact link
-
-        .h1Container {
-            border      : none;
-            margin-right: 11.5%;
-
-            h1 {
-                padding       : 15%;
-                width         : 90%;
-                display       : flex;
-                flex-direction: row;
-
-
-            }
-
-            //closes h1
-        }
-
-        .icons {
-            display: none;
-        }
-    }
-
-    //closes navConatiner 1000px
-}
-
-//closes media 1000px for nav-header
-////////////////////////////////////
-////////////////////////////////////
-///////////////////////////////////
-
-
-
-@media only screen and (max-width: 715px) and(max-width: 770px){
-    .navContainer{
-        width: 100%;
-        height: 15vh;
-
-        .h1Container{
-          padding: 0%;
-            width: 20%;
-            margin-left: 5%;
-            
-            h1{
-                padding: 0%;
-            }
-            
-
-
-
-        }
-
-        .navBar{
-            display: flex;
-            width: 95%;
-            margin-right: 2%;
-            display: flex;
-            flex-direction:row ;
-            padding: 2%;
-            height:5vh;
-
-            .home{
-                width:10%;
-                padding:0%;
-
-                &:hover{
-                    background: none;
-                }
-
-            }
-
-            .aboutUs{
-                padding: 0%;
-                width:20%;
-
-                &:hover{
-                    background: none;
-                }
-
-            }
-
-            .services{
-                padding: 0%;
-                width:15%;
-
-                &:hover{
-                    background: none;
-                }
-
-            }
-
-            .sautiNews{
-                padding: 0%;
-                width: 15%;
-
-                &:hover{
-                    background: none;
-                }
-            }
-
-            .contact{
-                padding: 0%;
-                width: 15%;
-
-                &:hover{
-                    background: none;
-                }
-            }
-         
-        }
-
-        
-    }
-    .header-img-text{
-
-        img{
-            width: 100%;
-        }
-        
-
-        .textonpic{
-
-            h2{
-                font-size: 1em;
-                display: none;
-
-            }
-            .btnContainer{
-
-                button{
-                    height: 3vh;
-
-                    a{
-                        font-size: 15px;
-                    }
-
-                }
-            }
-
-        }
-    }
-}
-
-
-
-

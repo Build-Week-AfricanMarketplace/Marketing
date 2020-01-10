@@ -130,20 +130,9 @@ table {
   display: flex;
   background: black;
   align-items: center;
-  height: 14vh;
+  height: 25vh;
   font-family: 'Gayathri', sans-serif;
   width: 100%;
-}
-.homeLinkStyling {
-  width: 5%;
-  text-align: center;
-  padding: 5.3%;
-  margin-left: 5%;
-}
-.otherLinkStyling {
-  width: 30%;
-  text-align: center;
-  padding: 5.3%;
 }
 .buttonDesign {
   background: #ffb20f;
@@ -180,93 +169,135 @@ table {
 }
 .navContainer {
   display: flex;
-  background: black;
-  align-items: center;
-  height: 14vh;
-  font-family: 'Gayathri', sans-serif;
-  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 2000px) {
+  .navContainer {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 25vh;
+    font-family: 'Gayathri', sans-serif;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1024px) {
+  .navContainer {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 25vh;
+    font-family: 'Gayathri', sans-serif;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 20vh;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 15vh;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 500px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
 }
 .navContainer .navBar {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  width: 10%;
+  justify-content: center;
   align-items: center;
 }
+@media (max-width: 2000px) {
+  .navContainer .navBar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .navContainer .navBar {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer .navBar {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .navContainer .navBar {
+    width: 100%;
+  }
+}
 .navContainer .navBar a {
-  text-decoration: none;
   color: white;
   font-size: 1em;
   font-family: 'Gayathri', sans-serif;
   font-size: 20px;
 }
-.navContainer .navBar .home {
-  width: 5%;
-  text-align: center;
-  padding: 5.3%;
-  margin-left: 5%;
+.navContainer .h1Container {
+  width: 10%;
+  padding: 1%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1%;
 }
-.navContainer .navBar .home:hover {
-  background: #bc0000;
-  color: black;
+@media (max-width: 500px) {
+  .navContainer .h1Container {
+    width: 100%;
+    padding: 5%;
+  }
 }
-.navContainer .navBar .aboutUs {
-  width: 30%;
-  text-align: center;
-  padding: 5.3%;
+@media (max-width: 800px) {
+  .navContainer .h1Container {
+    width: 20%;
+    padding: 2%;
+    box-sizing: border-box;
+  }
 }
-.navContainer .navBar .aboutUs:hover {
-  background: #bc0000;
-  color: black;
-}
-.navContainer .navBar .services {
-  width: 30%;
-  text-align: center;
-  padding: 5.3%;
-}
-.navContainer .navBar .services:hover {
-  background: #bc0000;
-  color: black;
-}
-.navContainer .navBar .sautiNews {
-  width: 30%;
-  text-align: center;
-  padding: 5.3%;
-}
-.navContainer .navBar .sautiNews:hover {
-  background: #bc0000;
-  color: black;
-}
-.navContainer .navBar .contact {
-  width: 30%;
-  text-align: center;
-  padding: 5.3%;
-}
-.navContainer .navBar .contact:hover {
-  background: #bc0000;
-  color: black;
-}
-.navContainer .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.navContainer .sticky .introContainer {
-  padding-top: 60px;
-}
-.navContainer h1 {
+.navContainer .h1Container h1 {
   color: white;
-  font-size: 2.6em;
-  padding: 2%;
+  font-size: 3em;
   display: flex;
   width: 100%;
-  margin-left: 30%;
-  margin-top: 10%;
 }
-.navContainer h1 span {
+@media (max-width: 800px) {
+  .navContainer .h1Container h1 {
+    margin-right: 10%;
+  }
+}
+.navContainer .h1Container h1 span {
   color: #bc0000;
 }
 .navContainer .icons {
   width: 9%;
+  padding: 2%;
+}
+@media (max-width: 1024px) {
+  .navContainer .icons {
+    display: none;
+  }
 }
 .navContainer .icons i {
   padding: 1%;
@@ -292,11 +323,29 @@ table {
   transform: translate(-50%, -50%);
   font-family: 'Gayathri', sans-serif;
 }
+@media (max-width: 500px) {
+  .header-img-text .textonpic {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+}
 .header-img-text .textonpic .btnContainer {
   width: 97%;
   padding: 2%;
   justify-content: space-around;
   display: flex;
+}
+@media (max-width: 500px) {
+  .header-img-text .textonpic .btnContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header-img-text .textonpic .btnContainer button {
   background: #ffb20f;
@@ -309,170 +358,36 @@ table {
   color: black;
   margin-top: 5%;
 }
+@media (max-width: 500px) {
+  .header-img-text .textonpic .btnContainer button {
+    width: 100%;
+  }
+}
 .header-img-text .textonpic .btnContainer button a {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
 }
+@media (max-width: 500px) {
+  .header-img-text .textonpic .btnContainer button a {
+    font-size: 1em;
+  }
+}
 .header-img-text .textonpic h2 {
   font-size: 2em;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .header-img-text .textonpic h2 {
+    font-size: 1.7em;
+  }
+}
 .header-img-text .textonpic p {
   font-size: 1em;
 }
-@media (max-width: 1245px) {
-  .navContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 25vh;
-    align-items: center;
-    width: 100%;
-    padding: 0%;
-  }
-  .navContainer .navBar {
-    width: 100%;
-    margin-right: 20%;
-    padding: 0%;
-    margin: 0%;
-  }
-  .navContainer .navBar a {
-    padding: 0%;
-    width: 100%;
-  }
-  .navContainer .home {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #bc0000;
-  }
-  .navContainer .home:hover {
-    background: #bc0000;
-    color: black;
-    text-decoration: underline;
-  }
-  .navContainer .aboutUs {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #bc0000;
-  }
-  .navContainer .aboutUs:hover {
-    background: #bc0000;
-    color: black;
-    text-decoration: underline;
-  }
-  .navContainer .services {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #bc0000;
-  }
-  .navContainer .services:hover {
-    background: #bc0000;
-    color: black;
-    text-decoration: underline;
-  }
-  .navContainer .sautiNews {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #bc0000;
-  }
-  .navContainer .sautiNews:hover {
-    background: #bc0000;
-    color: black;
-    text-decoration: underline;
-  }
-  .navContainer .contact {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #bc0000;
-  }
-  .navContainer .contact:hover {
-    background: #bc0000;
-    color: black;
-    text-decoration: underline;
-  }
-  .navContainer .h1Container {
-    border: none;
-    margin-right: 11.5%;
-  }
-  .navContainer .h1Container h1 {
-    padding: 15%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-  }
-  .navContainer .icons {
+@media (max-width: 500px) {
+  .header-img-text .textonpic p {
     display: none;
-  }
-}
-@media only screen and (max-width: 715px) and (max-width: 770px) {
-  .navContainer {
-    width: 100%;
-    height: 15vh;
-  }
-  .navContainer .h1Container {
-    padding: 0%;
-    width: 20%;
-    margin-left: 5%;
-  }
-  .navContainer .h1Container h1 {
-    padding: 0%;
-  }
-  .navContainer .navBar {
-    width: 95%;
-    margin-right: 2%;
-    display: flex;
-    flex-direction: row ;
-    padding: 2%;
-    height: 5vh;
-  }
-  .navContainer .navBar .home {
-    width: 10%;
-    padding: 0%;
-  }
-  .navContainer .navBar .home:hover {
-    background: none;
-  }
-  .navContainer .navBar .aboutUs {
-    padding: 0%;
-    width: 20%;
-  }
-  .navContainer .navBar .aboutUs:hover {
-    background: none;
-  }
-  .navContainer .navBar .services {
-    padding: 0%;
-    width: 15%;
-  }
-  .navContainer .navBar .services:hover {
-    background: none;
-  }
-  .navContainer .navBar .sautiNews {
-    padding: 0%;
-    width: 15%;
-  }
-  .navContainer .navBar .sautiNews:hover {
-    background: none;
-  }
-  .navContainer .navBar .contact {
-    padding: 0%;
-    width: 15%;
-  }
-  .navContainer .navBar .contact:hover {
-    background: none;
-  }
-  .header-img-text img {
-    width: 100%;
-  }
-  .header-img-text .textonpic h2 {
-    font-size: 1em;
-    display: none;
-  }
-  .header-img-text .textonpic .btnContainer button {
-    height: 3vh;
-  }
-  .header-img-text .textonpic .btnContainer button a {
-    font-size: 15px;
   }
 }
 body {
@@ -487,11 +402,6 @@ body .introContainer {
   font-size: 1.7em;
   font-family: 'Gayathri', sans-serif;
 }
-@media (max-width: 1245px) {
-  body .introContainer .introContainer {
-    border: solid 2px blue;
-  }
-}
 body .videoContainer {
   padding: 5%;
   background: #bc0000;
@@ -500,12 +410,31 @@ body .videoContainer {
   color: white;
   font-size: 20px;
 }
+@media (max-width: 1024px) {
+  body .videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+  }
+}
 body .videoContainer .One {
   display: flex;
   flex-direction: column;
   border: solid 1px black;
   border-radius: 10px;
   background: radial-gradient(#333333, black);
+}
+@media (max-width: 1024px) {
+  body .videoContainer .One {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  body .videoContainer .One iframe {
+    width: 100%;
+  }
 }
 body .videoContainer .One h3 {
   padding: 5%;
@@ -520,6 +449,11 @@ body .videoContainer .Two {
   border-radius: 10px;
   background: radial-gradient(#333333, black);
 }
+@media (max-width: 1024px) {
+  body .videoContainer .Two iframe {
+    width: 100%;
+  }
+}
 body .videoContainer .Two h3 {
   padding: 5%;
   text-align: center;
@@ -529,38 +463,6 @@ body .videoContainer .Two h3 {
 hr {
   margin: 0% 10%;
   color: white;
-}
-@media only screen and (max-width: 1245px) {
-  html {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  html body {
-    background: #bc0000;
-    margin: 0, auto;
-  }
-  html body .videoContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  html body .videoContainer .One {
-    width: 100%;
-    margin-bottom: 3%;
-  }
-  html body .videoContainer .One h3 {
-    width: 100%;
-  }
-  html body .videoContainer .One iframe {
-    width: 100%;
-    height: 50vh;
-  }
-  html body .videoContainer .Two {
-    width: 100%;
-  }
-  html body .videoContainer .Two iframe {
-    width: 100%;
-    height: 50vh;
-  }
 }
 .newsLetter {
   display: flex;
@@ -608,11 +510,6 @@ hr {
   font-family: 'Gayathri', sans-serif;
   font-size: 1em;
   text-align: center;
-}
-@media (max-width: 1000px) {
-  .newsLetter {
-    width: 104.5%;
-  }
 }
 footer {
   padding: 2%;

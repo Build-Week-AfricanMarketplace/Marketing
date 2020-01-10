@@ -2,7 +2,7 @@ body {
     background: @hoverRed;
     overflow-x: hidden;
 
-   
+
 
     .introContainer {
         background : @hoverRed;
@@ -12,115 +12,87 @@ body {
         font-size  : 1.7em;
         font-family: @FontGaya;
 
-
-        @media @desktop{
-            .introContainer {
-                border: solid 2px blue;
-
-            }
-
-            //closes introContainer
-
-
-        }
     }
 
-        //closes introContainer
+    //closes introContainer
 
 
-        .videoContainer {
-            padding        : 5%;
-            background     : @hoverRed;
-            display        : flex;
-            justify-content: space-around;
-            color          : white;
-            font-size      : 20px;
+    .videoContainer {
+        padding        : 5%;
+        background     : @hoverRed;
+        display        : flex;
+        justify-content: space-around;
+        color          : white;
+        font-size      : 20px;
 
-            .One {
-                .videoStyling();
-
-                h3 {
-                    .h3Styling();
-
-                }
-
-                //closes h3
-            }
-
-            //closes one
-
-            .Two {
-                .videoStyling();
-
-
-                h3 {
-                    .h3Styling();
-                }
-
-                //closes h3
-            }
-
-            // closes two
-        }
-
-        //closes videoCotainer
-    }
-
-    //closes body
-
-    hr {
-        margin: 0% 10%;
-        color : white;
-    }
-///////////
-
-@media only screen and (max-width: 1245px){
-    html{
-        width: 100%;
-        overflow-x: hidden;
         
-
-    
-
-    body{
-        background: @hoverRed;
-        margin: 0, auto;
-      
-    
-    .videoContainer{
+    @media @MeddeskTop{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        padding: 3%;
 
+    }
 
-        .One{
+        .One {
+            .videoStyling();
+
+            @media @MeddeskTop{
             width: 100%;
-            margin-bottom: 3%;
-
-            h3{
-                width: 100%;
-
+            margin-bottom: 5%;
+        
             }
 
             iframe{
-                width: 100%;
-                height: 50vh;
-            }//closes iframe
-        }//closes One
 
-        .Two{
-            width: 100%;
-
-            iframe{
-                width: 100%;
-                height: 50vh;
+                @media @MeddeskTop{
+                    width: 100%;
+            
+                }
             }
+
+            h3 {
+                .h3Styling();
+
+            }
+
+            //closes h3
         }
 
-    }//closes videoContainer
-}
-}
-}//closes media1000px
+        //closes one
 
-/////////////////////////////
-////////////////////////////
-////////////////////////////
+        .Two {
+            .videoStyling();
+
+            iframe{
+
+                @media @MeddeskTop{
+                    width: 100%;
+            
+                }
+            }
+
+
+            h3 {
+                .h3Styling();
+            }
+
+            
+
+            //closes h3
+        }
+
+        // closes two
+    }
+
+    //closes videoCotainer
+}
+
+//closes body
+
+hr {
+    margin: 0% 10%;
+    color : white;
+}
+
+///////////
