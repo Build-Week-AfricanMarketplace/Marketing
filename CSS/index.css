@@ -170,6 +170,7 @@ table {
 .navContainer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 @media (max-width: 2000px) {
   .navContainer {
@@ -204,7 +205,7 @@ table {
     box-sizing: border-box;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .navContainer {
     display: flex;
     flex-direction: column;
@@ -245,7 +246,7 @@ table {
     padding: 2%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .navContainer .navBar {
     width: 100%;
   }
@@ -263,7 +264,7 @@ table {
   justify-content: flex-start;
   margin-top: 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .navContainer .h1Container {
     width: 100%;
     padding: 5%;
@@ -323,7 +324,7 @@ table {
   transform: translate(-50%, -50%);
   font-family: 'Gayathri', sans-serif;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .header-img-text .textonpic {
     width: 80%;
     position: absolute;
@@ -333,18 +334,31 @@ table {
     display: flex;
   }
 }
+@media (max-width: 760px) {
+  .header-img-text .textonpic {
+    display: flex;
+    width: 80%;
+  }
+}
 .header-img-text .textonpic .btnContainer {
   width: 97%;
   padding: 2%;
   justify-content: space-around;
   display: flex;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .header-img-text .textonpic .btnContainer {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic .btnContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
   }
 }
 .header-img-text .textonpic .btnContainer button {
@@ -358,7 +372,12 @@ table {
   color: black;
   margin-top: 5%;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+  .header-img-text .textonpic .btnContainer button {
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
   .header-img-text .textonpic .btnContainer button {
     width: 100%;
   }
@@ -368,7 +387,7 @@ table {
   color: black;
   font-size: 1.2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .header-img-text .textonpic .btnContainer button a {
     font-size: 1em;
   }
@@ -377,24 +396,30 @@ table {
   font-size: 2em;
   margin: 2%;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .header-img-text .textonpic h2 {
     font-size: 1.7em;
+  }
+}
+@media (max-width: 760px) {
+  .header-img-text .textonpic h2 {
+    font-size: 2.4em;
   }
 }
 .header-img-text .textonpic p {
   font-size: 1em;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .header-img-text .textonpic p {
     display: none;
   }
 }
-body {
-  background: #bc0000;
-  overflow-x: hidden;
+@media (max-width: 760px) {
+  .header-img-text .textonpic p {
+    display: none;
+  }
 }
-body .introContainer {
+.introContainer {
   background: #bc0000;
   color: white;
   text-align: center;
@@ -402,7 +427,7 @@ body .introContainer {
   font-size: 1.7em;
   font-family: 'Gayathri', sans-serif;
 }
-body .videoContainer {
+.videoContainer {
   padding: 5%;
   background: #bc0000;
   display: flex;
@@ -411,14 +436,14 @@ body .videoContainer {
   font-size: 20px;
 }
 @media (max-width: 1024px) {
-  body .videoContainer {
+  .videoContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 3%;
   }
 }
-body .videoContainer .One {
+.videoContainer .One {
   display: flex;
   flex-direction: column;
   border: solid 1px black;
@@ -426,23 +451,23 @@ body .videoContainer .One {
   background: radial-gradient(#333333, black);
 }
 @media (max-width: 1024px) {
-  body .videoContainer .One {
+  .videoContainer .One {
     width: 100%;
     margin-bottom: 5%;
   }
 }
 @media (max-width: 1024px) {
-  body .videoContainer .One iframe {
+  .videoContainer .One iframe {
     width: 100%;
   }
 }
-body .videoContainer .One h3 {
+.videoContainer .One h3 {
   padding: 5%;
   text-align: center;
   font-size: 1.2em;
   font-family: 'Gayathri', sans-serif;
 }
-body .videoContainer .Two {
+.videoContainer .Two {
   display: flex;
   flex-direction: column;
   border: solid 1px black;
@@ -450,11 +475,11 @@ body .videoContainer .Two {
   background: radial-gradient(#333333, black);
 }
 @media (max-width: 1024px) {
-  body .videoContainer .Two iframe {
+  .videoContainer .Two iframe {
     width: 100%;
   }
 }
-body .videoContainer .Two h3 {
+.videoContainer .Two h3 {
   padding: 5%;
   text-align: center;
   font-size: 1.2em;
