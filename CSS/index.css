@@ -570,8 +570,21 @@ footer .footericons {
 .aboutintroContainer .aboutContainer .projectLeadBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .projectLeadBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .aboutintroContainer .aboutContainer .projectLeadBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .projectLeadBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .projectLeadBox h3 {
   width: 100%;
@@ -582,14 +595,32 @@ footer .footericons {
   border-radius: 10px;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .projectLeadBox h3 {
+    width: 90%;
+  }
+}
 .aboutintroContainer .aboutContainer .projectLeadBox p {
   padding: 4%;
 }
 .aboutintroContainer .aboutContainer .uxDesignBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uxDesignBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 .aboutintroContainer .aboutContainer .uxDesignBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uxDesignBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .uxDesignBox h3 {
   width: 100%;
@@ -600,14 +631,32 @@ footer .footericons {
   border-radius: 10px;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uxDesignBox h3 {
+    width: 90%;
+  }
+}
 .aboutintroContainer .aboutContainer .uxDesignBox p {
   padding: 4%;
 }
 .aboutintroContainer .aboutContainer .uiDeveloperBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uiDeveloperBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .aboutintroContainer .aboutContainer .uiDeveloperBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uiDeveloperBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .uiDeveloperBox h3 {
   width: 100%;
@@ -618,14 +667,32 @@ footer .footericons {
   border-radius: 10px;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .uiDeveloperBox h3 {
+    width: 90%;
+  }
+}
 .aboutintroContainer .aboutContainer .uiDeveloperBox p {
   padding: 4%;
 }
 .aboutintroContainer .aboutContainer .reactBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .aboutintroContainer .aboutContainer .reactBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .reactBox h3 {
   width: 100%;
@@ -636,14 +703,32 @@ footer .footericons {
   border-radius: 10px;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactBox h3 {
+    width: 90%;
+  }
+}
 .aboutintroContainer .aboutContainer .reactBox p {
   padding: 4%;
 }
 .aboutintroContainer .aboutContainer .reactIIBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactIIBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .aboutintroContainer .aboutContainer .reactIIBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactIIBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .reactIIBox h3 {
   width: 100%;
@@ -654,14 +739,32 @@ footer .footericons {
   border-radius: 10px;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .reactIIBox h3 {
+    width: 90%;
+  }
+}
 .aboutintroContainer .aboutContainer .reactIIBox p {
   padding: 4%;
 }
 .aboutintroContainer .aboutContainer .backendBox {
   display: flex;
 }
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .backendBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 .aboutintroContainer .aboutContainer .backendBox img {
   border-radius: 100%;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .backendBox img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .aboutintroContainer .aboutContainer .backendBox h3 {
   width: 100%;
@@ -671,6 +774,11 @@ footer .footericons {
   background: radial-gradient(#333333, black);
   border-radius: 10px;
   box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .aboutintroContainer .aboutContainer .backendBox h3 {
+    width: 90%;
+  }
 }
 .aboutintroContainer .aboutContainer .backendBox p {
   padding: 4%;
