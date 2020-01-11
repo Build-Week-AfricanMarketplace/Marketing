@@ -1,8 +1,8 @@
+body{
+    background: @sautiRed;
 
-
-
-    .introContainer {
-        background : @hoverRed;
+.introContainer {
+        background :@sautiRed;
         color      : white;
         text-align : center;
         padding    : 5%;
@@ -16,7 +16,7 @@
 
     .videoContainer {
         padding        : 5%;
-        background     : @hoverRed;
+        background     : @sautiRed;
         display        : flex;
         justify-content: space-around;
         color          : white;
@@ -29,34 +29,30 @@
         justify-content: space-around;
         padding: 3%;
 
-    }
+    }///closes Meddesktop
 
         .One {
             .videoStyling();
 
             @media @MeddeskTop{
-            width: 100%;
+            width: @width;
             margin-bottom: 5%;
-        
-            }
+            }///closes one
 
             iframe{
 
                 @media @MeddeskTop{
-                    width: 100%;
-            
-                }
-            }
+                    width: @width
+                }//closes meddesktop
+            }//closes iframe
 
             h3 {
                 .h3Styling();
-
             }
-
             //closes h3
         }
-
         //closes one
+
 
         .Two {
             .videoStyling();
@@ -64,27 +60,20 @@
             iframe{
 
                 @media @MeddeskTop{
-                    width: 100%;
-            
-                }
-            }
-
+                    width: @width;
+                }//closes meddesktop
+            }//closes iframe
 
             h3 {
                 .h3Styling();
             }
-
-            
-
             //closes h3
         }
-
         // closes two
     }
-
     //closes videoCotainer
 
-
+}
 //closes body
 
 hr {
@@ -92,4 +81,4 @@ hr {
     color : white;
 }
 
-///////////
+

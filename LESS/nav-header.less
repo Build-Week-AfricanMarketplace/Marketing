@@ -1,7 +1,7 @@
 .navContainer {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: @width;
     
    
 
@@ -19,7 +19,7 @@
     @media @LgTablet{
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        width: @width;
         justify-content: space-around;
         height: 15vh;
         box-sizing: border-box;
@@ -27,8 +27,7 @@
     }
 
     @media @MedTablet{
-        display: flex;
-        flex-direction: column;
+        .flexColumn();
         height: 15vh;
 
     }
@@ -51,28 +50,20 @@
         }
 
         @media @MeddeskTop{
-            width: 75%;
-            display        : flex;
-            justify-content: space-between;
-            align-items    : center;
-            padding: 2%;
+            .Lg-MedTabStyling();
         }
 
         @media @LgTablet{
-            
-            display: flex;
+            .Lg-MedTabStyling();
             flex-direction: row;
-            width: 75%;
             justify-content: center;
-            justify-content: space-around;
             box-sizing: border-box;
-            padding: 2%;
     
         }
 
         
      @media @MedTablet{
-        width: 100%;
+        width: @width;
 
     }
 
@@ -97,7 +88,7 @@
 
         
     @media @MedTablet{
-        width: 100%;
+        width: @width;
         padding: 5%;
 
     }
@@ -123,7 +114,7 @@
         }
 
         span {
-            color: @hoverRed;
+            color: @sautiRed;
         }
 
         //closes span
@@ -164,7 +155,6 @@
 
     img {
         width : 100%;
-        border: solid 2px black;
 
        
 
@@ -209,14 +199,12 @@
 
             @media @MedTablet{
                 width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;        
+              .flexColumn();
+            align-items: center;        
             }
 
             @media @Lg-MedTablet{
-                display: flex;
-                flex-direction: column;
+                .flexColumn();
                 width: 80%;
             }
 

@@ -22,17 +22,26 @@
             display: flex;
 
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                .flexColumn();
+            }
+
+            @media @Lg-MedTablet{
+                width: @width;
+                .flexColumn();
+                padding: 3%;
             }
 
             img {
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
+                    .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
                     width: 60%;
                     height: 60%;
+                    
                 }
             }
 
@@ -42,18 +51,19 @@
                 .aboutH3Styling();
 
                 @media @Lg-Mobile{
-                    width: 90%;
+                    width: @width1;
                 }
 
+                @media @Lg-MedTablet{
+                    width: 95%;
+                }
             }
-
             //closes h3
 
             p {
                 padding: 4%;
             }
         }
-
         //projectLeadbox
 
         .uxDesignBox {
@@ -61,8 +71,11 @@
 
             
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
+                .flexColumn-Reverse();
+            }
+
+            @media @Lg-MedTablet{
+                .tabLgMedStyleBox();
                 flex-direction: column-reverse;
             }
 
@@ -70,21 +83,29 @@
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
-                    width: 60%;
-                    height: 60%;
+                    .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleIMG()
                 }
             }
-
-
-
+            
             h3 {
                 .aboutH3Styling();
+
+                a{
+                    text-decoration: none;
+                    text-decoration-color: white;
+                }
 
                 @media @Lg-Mobile{
                     width: 90%;
                 }
 
-
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleH3()
+                }
             }
 
             //closes h3
@@ -101,8 +122,11 @@
 
             
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
+                .flexColumn();
+            }
+
+            @media @Lg-MedTablet{
+                .tabLgMedStyleBox();
                 flex-direction: column;
             }
 
@@ -110,8 +134,11 @@
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
-                    width: 60%;
-                    height: 60%;
+                    .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleIMG();
                 }
                 
             }
@@ -122,7 +149,11 @@
                 .aboutH3Styling();
 
                 @media @Lg-Mobile{
-                    width: 90%;
+                    width: @width1;
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleH3();
                 }
 
 
@@ -141,8 +172,11 @@
             display: flex;
             
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
+              .flexColumn();
+            }
+
+            @media @Lg-MedTablet{
+                .tabLgMedStyleBox();
                 flex-direction: column;
             }
 
@@ -150,20 +184,24 @@
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
-                    width: 60%;
-                    height: 60%;
+                   .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleIMG();
                 }
             }
-
-
 
             h3 {
                 .aboutH3Styling();
 
                 @media @Lg-Mobile{
-                    width: 90%;
+                    width: @width1;
                 }
 
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleH3();
+                }
 
             }
 
@@ -180,8 +218,11 @@
             display: flex;
 
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
+           .flexColumn();
+            }
+
+            @media @Lg-MedTablet{
+                .tabLgMedStyleBox();
                 flex-direction: column;
             }
 
@@ -189,8 +230,11 @@
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
-                    width: 60%;
-                    height: 60%;
+                    .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleIMG();
                 }
             }
 
@@ -199,7 +243,12 @@
                 .aboutH3Styling();
 
                 @media @Lg-Mobile{
-                    width: 90%;
+                    width: @width1
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleBox();
+                    flex-direction: column;
                 }
 
 
@@ -218,8 +267,11 @@
             display: flex;
 
             @media @Lg-Mobile{
-                display: flex;
-                align-items: center;
+              .flexColumn-Reverse();
+            }
+
+            @media @Lg-MedTablet{
+                .tabLgMedStyleBox();
                 flex-direction: column-reverse;
             }
 
@@ -228,20 +280,25 @@
                 border-radius: 100%;
 
                 @media @Lg-Mobile{
-                    width: 60%;
-                    height: 60%;
+                    .imgPicSize();
+                }
+
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleIMG();
+                    flex-direction: column-reverse;
                 }
             }
-
-
 
             h3 {
                 .aboutH3Styling();
 
                 @media @Lg-Mobile{
-                    width: 90%;
+                    width: @width1
                 }
 
+                @media @Lg-MedTablet{
+                    .tabLgMedStyleH3();
+                }
 
             }
 
@@ -253,12 +310,9 @@
         }
 
         //backend close
-
     }
 
     //closes aboutContainer
-
-
 }
 
 //closes introContainer
